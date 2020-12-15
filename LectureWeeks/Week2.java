@@ -118,6 +118,10 @@ In Java
 int ar[]={1,2,3,4,5};//size cannot be set
 //Heap
 int ar[]= new int [5];
+//ArrayList
+List<Integer> 1st = new ArrayList<Integer>();
+//Strings
+Set<String> CourseNames= new Hashset<String>();
 
 
 
