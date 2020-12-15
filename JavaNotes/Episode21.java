@@ -233,12 +233,12 @@ class Main {
 
 	}
 }
-	
+	 
 Output:
 Vehicle constructor
 
 
-
+//8
 public class Vehicle {
 	
 	int maxSpeed;
@@ -283,9 +283,97 @@ Car constructor
 Vehicle constructor with/speed
 111
 	
+//9 this. and super. same thing
+
+public class Vehicle {
+	protected int maxSpeed,minSpeed;
+	protected double travelDist;
 	
+	public Vehicle(int maxSpeed, int minSpeed, double travelDist) {
+		this.maxSpeed = maxSpeed;
+		this.minSpeed = minSpeed;
+		this.travelDist = travelDist;
+	}
+
 	
+}
+
+
+class Car extends Vehicle{
+	String tyres;
 	
+	public Car(int maxSpeed, int minSpeed, double travelDist, String tyres) {
+		super(maxSpeed, minSpeed, travelDist);
+		this.tyres = tyres;
+		
+		this.maxSpeed=maxSpeed;
+		super.maxSpeed=maxSpeed;
+		
+	}
+
+
+
+}
+
+
+//10 Same thing
+public class Main{
+	public static void main(String[] args) {
+	 //A p =new A(2);
+	  B obj = new B(3,4);
+	}
+}
+
+class A{
+    int integerA;
+   
+    public A(int integerA){
+     this.integerA= 2*integerA;
+      System.out.println("integer A1 :"+ integerA);
+    }
+}
+
+class B extends A{
+    int integerB=20;
+    
+    public B(int integerA, int integerB){
+        super(integerA);
+        this.integerB=integerB;
+        
+        System.out.println("integer A2 :"+ integerA);
+         System.out.println("integer B :"+ integerB);
+    }
+}
+
+vs	
+	
+public class Main{
+	public static void main(String[] args) {
+	  B obj = new B(3,4);
+	}
+}
+
+class A{
+    int integerA;
+   
+    public A(int num){
+     integerA= 2*num;
+      System.out.println("integer A1 :"+ integerA);
+    }
+}
+
+class B extends A{
+    int integerB=20;
+    
+    public B(int no1, int no2){
+        super(no1);
+        integerB=integerB;
+        
+        System.out.println("integer A2 :"+ integerA);
+         System.out.println("integer B :"+ integerB);
+    }
+}
+
 	
 	
 	
