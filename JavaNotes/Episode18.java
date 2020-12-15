@@ -1,7 +1,8 @@
 /******************************************************************************
 Episode 18: Printing
 
-*******************************************************************************/public class Main{
+*******************************************************************************/
+public class Main{
 	public static void main (String[] args){
 		List<Integer> 1st = new ArrayList<Integer>();
 		1st.add(1);
@@ -25,6 +26,7 @@ public class Main{
 		1st.add(3);
 		System.out.println(1st);// [1,2,3,4]
 		
+		//Type create name: name that you want to print
 		for (Integer item:1st){
 			System.out.println(item);
 
@@ -56,4 +58,7 @@ public class Main{
 	}
 	
 	for (Integer item:1st){
-		System.ou
+		System.out.println(1st)
+		
+	}	
+	//Not Finished
