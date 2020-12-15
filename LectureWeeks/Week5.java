@@ -325,20 +325,20 @@ you can only call abstract method in an abstract class
 //6 abstract method
 
 //abstract class allows you to call abstract method
-public abstract class GeometricObject {
+public ab  GeometricObject {
 	
 	private String ColorFilled;
 	protected boolean isFilled;
 	
 
 	public GeometricObject(String colorFilled, boolean isFilled) {
-		super();
 		ColorFilled = colorFilled;
 		this.isFilled = isFilled;
 			
 	}
 	//Abstract Area(abstract method only allowed in abstract class)
 	public abstract double getArea();
+	
 	
 }
 
@@ -1077,7 +1077,22 @@ private static <Number> getMax(Collection <Number> listName) {
 			Circle c2 =(Circle) new GeometricObject("blue",true);
 		}
 
-
+//11 From Assignment 2
+1.Generic Product extends forTowing,forRepair,forConcession,forRental
+2.Product type creates all together at once
+3.If we use the <Product> Array List, we will keep creating a new product whenever
+  we read in
+4. Using the <Generic Product> ArrayList can pinpoint on the product
+5.We can use Polymorphism for it
+6./*	ArrayList<Rental> r = new ArrayList<Rental>();
+		ArrayList<Towing> t = new ArrayList<Towing>();
+		ArrayList<Concession> c = new ArrayList<Concession>();
+		ArrayList<Repair> re = new ArrayList<Repair>();*/
+7. Since <Generic Products> extends them we can use it
+8. Instead of calling the product whenver there is a match, we only create
+	product if found
+9. Product includes all of it, Generic is a super class
+  
 
 
 
