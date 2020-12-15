@@ -369,7 +369,7 @@ public class MyLinkedList<T> {
 
 
 
-//Summarise
+//Summarise for Friday
 
 Insert from Start
 	public void insertAtStart(T item) {
