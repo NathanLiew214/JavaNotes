@@ -25,6 +25,7 @@ public class Student {
 	//Same name as the class name
 	//It is already created for you
 	//Default constructor
+	//When you create a student objects these are the fields of the object created
 	public Student(	String NUID,String name,double CourseGrade1,double CourseGrade2 ,double CourseGrade3) {
 		this.NUID=NUID;
 		this.name=name;
